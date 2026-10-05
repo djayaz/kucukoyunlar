@@ -48,11 +48,11 @@
 
 <header>
   <h1>Nonogram — Gizlilik Politikası</h1>
-  <p class="sub">Küçük Oyunlar · Son güncelleme: 3 Eylül 2026</p>
+  <p class="sub">Küçük Oyunlar · Son güncelleme: 5 Ekim 2026</p>
 </header>
 
 <p>Bu politika, <strong>Küçük Oyunlar</strong> tarafından geliştirilen <strong>Nonogram</strong>
-(paket adı <code>com.kucukoyunlar.nonogram_game</code>) mobil uygulamasının kişisel verileri
+(paket adı <code>com.kucukoyunlar.nonogram</code>) mobil uygulamasının kişisel verileri
 nasıl işlediğini açıklar. Uygulamayı kullanarak bu politikayı kabul etmiş olursunuz.</p>
 
 <h2>1. Veri sorumlusu ve iletişim</h2>
@@ -66,7 +66,10 @@ bilgilerinizi toplamıyoruz.</p>
 
 <h2>3. Cihazınızda kalan veriler</h2>
 <p>Oyun ilerlemeniz ve tercihleriniz yalnızca cihazınızın yerel depolamasında tutulur.
-Bu veriler sunucularımıza gönderilmez; zaten bizim bir sunucumuz yoktur.</p>
+Bu kayıtların kendisi hiçbir sunucuya gönderilmez; bizim bir sunucumuz yoktur. Oyunun
+hangi bölümlerinin fazla kolay ya da fazla zor olduğunu anlamak için Google Firebase
+üzerinden kimliğinizle ilişkilendirilmeyen ölçüm verileri toplanır; ayrıntısı için
+<a href="#tr-olcum">5. bölüme</a> bakın.</p>
 <ul>
   <li>Çözülen bölümler, yıldızlar, puan ve süre kayıtları</li>
   <li>Günlük bulmaca serisi ve istatistikler</li>
@@ -99,7 +102,35 @@ ve <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">
 sıfırlayabilir veya kişiselleştirilmiş reklamları tamamen kapatabilirsiniz. Bu, reklam
 görmenizi engellemez; yalnızca reklamların ilgi alanlarınıza göre seçilmesini durdurur.</p>
 
-<h2>5. Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre</h2>
+<h2 id="tr-olcum">5. Ölçüm ve hata raporlama</h2>
+<p>Uygulama, Google Ireland Limited tarafından sağlanan <strong>Firebase Analytics</strong>
+ve <strong>Firebase Crashlytics</strong> hizmetlerini kullanır. Amaç tek: oyunun zorluk
+dengesini tahminle değil ölçümle ayarlamak ve çökmeleri görebilmek.</p>
+<table>
+  <tr><th>Veri</th><th>Amaç</th></tr>
+  <tr><td>Bölüm olayları (açılan bölümün numarası ve ızgara ölçüsü, tamamlama süresi,
+  hata ve ipucu sayısı, kazanılan yıldız, bölümün yarıda bırakılıp bırakılmadığı)</td>
+  <td>Hangi bölümlerin fazla kolay ya da fazla zor olduğunu belirlemek ve zorluk
+  dengesini düzeltmek</td></tr>
+  <tr><td>Uygulama kullanım bilgisi (oturum süresi, açılan ekranlar, uygulama sürümü)</td>
+  <td>Hangi bölümlerin oynanmadığını görmek</td></tr>
+  <tr><td>Cihaz ve ülke bilgisi (model, işletim sistemi sürümü, dil, ülke)</td>
+  <td>Hataları etkilenen cihazlara göre ayırmak</td></tr>
+  <tr><td>Çökme kayıtları (hata yığını, çökme anındaki uygulama durumu)</td>
+  <td>Çökmeleri bulmak ve gidermek</td></tr>
+  <tr><td>Firebase tarafından üretilen uygulamaya özgü kurulum kimliği</td>
+  <td>Aynı kuruluştan gelen olayları birbirine bağlamak</td></tr>
+</table>
+<p>Adınız, e-posta adresiniz veya benzeri bir kimlik bilgisi bu verilerin hiçbirinde yer
+almaz; oyun kaydınızın kendisi (çözdüğünüz bulmacaların listesi, puanınız) da gönderilmez.
+Toplanan veriler toplu raporlar halinde incelenir, tek tek kullanıcı izlemek için
+kullanılmaz ve üçüncü taraflara satılmaz.</p>
+<p>Ölçümü istediğiniz an kapatabilirsiniz: <em>Ayarlar → Gizlilik → Oyunun
+gelişmesine katkıda bulun</em>. Kapattığınızda hem Analytics hem Crashlytics
+durur ve o cihazda biriken ölçüm kimliği silinir. Ayrıca ölçüm, aşağıdaki rıza
+ekranında <em>onay vermediğiniz</em> bölgelerde hiç başlatılmaz.</p>
+
+<h2>6. Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre</h2>
 <p>Bu bölgelerdeki kullanıcılara, uygulama ilk açıldığında Google'ın
 <strong>User Messaging Platform (UMP)</strong> aracılığıyla bir rıza ekranı gösterilir.
 Kişiselleştirilmiş reklamlar yalnızca açık rızanız varsa sunulur; rıza vermezseniz
@@ -107,31 +138,35 @@ sınırlı (kişiselleştirilmemiş) reklam gösterilir.</p>
 <p>Tercihinizi daha sonra değiştirmek isterseniz uygulama içinden
 <em>Ayarlar → Gizlilik → Gizlilik seçenekleri</em> ile aynı ekranı yeniden açabilirsiniz.</p>
 
-<h2>6. Satın alma</h2>
+<h2>7. Satın alma</h2>
 <p>Bu sürümde uygulama içi satın alma bulunmamaktadır. İleride eklenirse ödeme işlemleri
 Google Play tarafından yürütülür; kart bilgileriniz bize hiçbir aşamada ulaşmaz ve bu
 politika güncellenir.</p>
 
-<h2>7. Çocukların gizliliği</h2>
+<h2>8. Çocukların gizliliği</h2>
 <p>Uygulama genel kitleye yöneliktir ve 13 yaşından küçük çocuklara yönelik değildir.
 13 yaşından küçük çocuklardan bilerek kişisel veri toplamayız. Çocuğunuzun bize veri
 sağladığını düşünüyorsanız yukarıdaki adresten bize yazın; gereken işlemi yaparız.</p>
 
-<h2>8. Veri güvenliği ve saklama</h2>
+<h2>9. Veri güvenliği ve saklama</h2>
 <p>Oyun verileri cihazınızda, işletim sisteminin uygulama sanal alanı (sandbox) içinde
-saklanır ve başka uygulamalar tarafından okunamaz. Reklam verilerinin saklama süreleri
-Google tarafından belirlenir ve Google'ın gizlilik politikasına tabidir.</p>
+saklanır ve başka uygulamalar tarafından okunamaz. Firebase'e giden ölçüm verileri
+aktarım sırasında şifrelenir; kullanıcı düzeyindeki ölçüm verileri en fazla 2 ay, çökme
+kayıtları 90 gün saklanır, sonra silinir. Reklam verilerinin saklama süreleri Google
+tarafından belirlenir ve Google'ın gizlilik politikasına tabidir.</p>
 
-<h2>9. Haklarınız</h2>
+<h2>10. Haklarınız</h2>
 <p>Bulunduğunuz ülkeye göre KVKK (6698 sayılı kanun), GDPR veya benzeri mevzuat
 kapsamında; verilerinize erişme, düzeltilmesini veya silinmesini isteme, işlemeye itiraz
 etme ve rızanızı geri çekme haklarına sahipsiniz.</p>
-<p>Uygulamanın tuttuğu veriler cihazınızda olduğu için erişme ve silme haklarınızı
-uygulama içinden doğrudan kullanabilirsiniz. Reklam verilerine ilişkin talepler için
-Google'a başvurmanız gerekir. Her durumda bize
+<p>Oyun kaydınız cihazınızda olduğu için erişme ve silme haklarınızı uygulama içinden
+doğrudan kullanabilirsiniz. Ölçüm verisi için <em>Ayarlar → Gizlilik → Oyunun gelişmesine
+katkıda bulun</em> anahtarını kapatmanız toplamayı durdurur ve cihazdaki ölçüm kimliğini
+siler; daha önce gönderilmiş verilerin silinmesini isterseniz bize yazın. Reklam
+verilerine ilişkin talepler için Google'a başvurmanız gerekir. Her durumda bize
 <a href="mailto:abdllhakgul@gmail.com">abdllhakgul@gmail.com</a> adresinden yazabilirsiniz.</p>
 
-<h2>10. Değişiklikler</h2>
+<h2>11. Değişiklikler</h2>
 <p>Bu politika zaman zaman güncellenebilir. Güncel sürüm her zaman bu adreste yayımlanır
 ve yukarıdaki "son güncelleme" tarihi değiştirilir. Önemli değişikliklerde uygulama
 içinde bilgilendirme yapılır.</p>
@@ -140,11 +175,11 @@ içinde bilgilendirme yapılır.</p>
 
 <header style="border:0; margin-top:40px; padding-bottom:0;">
   <h1>Nonogram — Privacy Policy</h1>
-  <p class="sub">Küçük Oyunlar · Last updated: 3 September 2026</p>
+  <p class="sub">Küçük Oyunlar · Last updated: 5 October 2026</p>
 </header>
 
 <p>This policy explains how the mobile application <strong>Nonogram</strong>
-(package <code>com.kucukoyunlar.nonogram_game</code>), developed by
+(package <code>com.kucukoyunlar.nonogram</code>), developed by
 <strong>Küçük Oyunlar</strong>, handles personal data. By using the app you agree to
 this policy.</p>
 
@@ -157,8 +192,10 @@ Contact: <a href="mailto:abdllhakgul@gmail.com">abdllhakgul@gmail.com</a></p>
 email address, phone number or any other directly identifying information.</p>
 
 <h2>3. Data that stays on your device</h2>
-<p>Your progress and preferences are stored only in your device's local storage. They are
-never sent to our servers — we do not operate any.</p>
+<p>Your progress and preferences are stored only in your device's local storage. Those
+records are never sent to any server — we do not operate one. To learn which levels are
+too easy or too hard, the app does collect measurement data through Google Firebase that
+is not linked to your identity; see <a href="#en-measurement">section 5</a>.</p>
 <ul>
   <li>Solved levels, stars, scores and completion times</li>
   <li>Daily puzzle streak and statistics</li>
@@ -189,7 +226,35 @@ and the <a href="https://policies.google.com/privacy" target="_blank" rel="noope
 ID or turn off personalised ads entirely. This does not remove ads; it only stops them
 from being tailored to your interests.</p>
 
-<h2>5. EEA, United Kingdom and Switzerland</h2>
+<h2 id="en-measurement">5. Measurement and crash reporting</h2>
+<p>The app uses <strong>Firebase Analytics</strong> and <strong>Firebase Crashlytics</strong>,
+provided by Google Ireland Limited, for a single purpose: to tune the game's difficulty from
+measurement rather than guesswork, and to see crashes.</p>
+<table>
+  <tr><th>Data</th><th>Purpose</th></tr>
+  <tr><td>Level events (the number and grid size of the level opened, completion time,
+  mistake and hint counts, stars earned, whether the level was abandoned)</td>
+  <td>Identifying which levels are too easy or too hard, and correcting the
+  difficulty curve</td></tr>
+  <tr><td>App usage (session length, screens opened, app version)</td>
+  <td>Seeing which levels go unplayed</td></tr>
+  <tr><td>Device and country information (model, OS version, language, country)</td>
+  <td>Separating crashes by affected device</td></tr>
+  <tr><td>Crash records (stack trace, app state at the moment of the crash)</td>
+  <td>Finding and fixing crashes</td></tr>
+  <tr><td>An app-specific installation ID generated by Firebase</td>
+  <td>Linking events that come from the same installation</td></tr>
+</table>
+<p>None of this includes your name, email address or any similar identifier, and your save
+data itself (the list of puzzles you solved, your score) is not transmitted. The data is
+reviewed as aggregate reports, is not used to track individual users, and is not sold to
+third parties.</p>
+<p>You can turn measurement off at any time: <em>Settings → Privacy → Help improve
+the game</em>. Turning it off stops both Analytics and Crashlytics and deletes the
+measurement identifier held on that device. In addition, measurement is never started in
+regions where you <em>do not consent</em> on the form described below.</p>
+
+<h2>6. EEA, United Kingdom and Switzerland</h2>
 <p>Users in these regions are shown a consent form on first launch, delivered through
 Google's <strong>User Messaging Platform (UMP)</strong>. Personalised ads are served only
 with your explicit consent; if you decline, limited (non-personalised) ads are shown
@@ -197,31 +262,35 @@ instead.</p>
 <p>To change your choice later, reopen the same form from
 <em>Settings → Privacy → Privacy options</em> inside the app.</p>
 
-<h2>6. Purchases</h2>
+<h2>7. Purchases</h2>
 <p>This version contains no in-app purchases. If they are added later, payments will be
 handled by Google Play, your payment details will never reach us, and this policy will be
 updated.</p>
 
-<h2>7. Children's privacy</h2>
+<h2>8. Children's privacy</h2>
 <p>The app is intended for a general audience and is not directed at children under 13.
 We do not knowingly collect personal data from children under 13. If you believe your
 child has provided us with data, write to the address above and we will act on it.</p>
 
-<h2>8. Security and retention</h2>
+<h2>9. Security and retention</h2>
 <p>Game data is stored on your device inside the operating system's application sandbox and
-cannot be read by other apps. Retention periods for advertising data are determined by
+cannot be read by other apps. Measurement data sent to Firebase is encrypted in transit;
+user-level measurement data is kept for at most 2 months and crash records for 90 days,
+after which they are deleted. Retention periods for advertising data are determined by
 Google and governed by Google's privacy policy.</p>
 
-<h2>9. Your rights</h2>
+<h2>10. Your rights</h2>
 <p>Depending on your country, you may have rights under the GDPR, Turkey's KVKK (Law
 no. 6698) or comparable legislation: to access your data, to have it corrected or erased,
 to object to processing, and to withdraw consent.</p>
-<p>Because the data the app keeps lives on your device, you can exercise access and
-erasure directly within the app. For advertising data, requests must be directed to
-Google. You may write to us at any time at
+<p>Because your save data lives on your device, you can exercise access and erasure
+directly within the app. For measurement data, turning off <em>Settings → Privacy → Help
+improve the game</em> stops collection and deletes the measurement identifier on the
+device; to have data already sent deleted, write to us. For advertising data, requests
+must be directed to Google. You may write to us at any time at
 <a href="mailto:abdllhakgul@gmail.com">abdllhakgul@gmail.com</a>.</p>
 
-<h2>10. Changes</h2>
+<h2>11. Changes</h2>
 <p>This policy may be updated from time to time. The current version is always published at
 this address and the "last updated" date above is revised accordingly. Significant changes
 will be announced inside the app.</p>
